@@ -1,0 +1,14 @@
+.SearchResults{
+    grid-column-start: 2; 
+    grid-column-end: 3;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+}
+@media(max-width: 500px){
+    .SearchResults{
+        grid-column-start: 1; 
+        grid-column-end: 1;
+    }
+}

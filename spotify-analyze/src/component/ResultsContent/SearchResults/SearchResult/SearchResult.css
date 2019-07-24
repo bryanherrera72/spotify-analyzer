@@ -1,0 +1,72 @@
+.SearchResult{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px;
+    height: 150px;
+    width: 70%;
+}
+.ImgBox{
+    height: 105px;
+    width: 105px;
+    margin-right: 10px;
+}
+.InfoBox{
+    position:relative;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    height: 120px;
+    width: 300px;
+}
+.SongImg{
+    width: 100%;
+    height: auto;
+}
+.SongTitle{
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0px 0px;
+    cursor: pointer;
+    
+}
+.SongArtist{
+    font-size: 1.1em;
+    margin: 0px 0px;
+    padding-left: 10px;
+}
+.SongAlbum{
+    font-size: .7em;
+    margin: 0px 0px;
+    padding-left: 10px;
+}
+
+@media(max-width: 500px){
+    .SearchResult{
+        margin: 5px;
+        justify-content: space-evenly
+    }
+    .InfoBox{
+        top: -20px;
+    }
+    .SongTitle{
+        font-size: .9em;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .SongArtist{
+        font-size: .7em;
+        margin: 0px 0px;
+        padding-left: 10px;
+    }
+    .SongAlbum{
+        font-size: .5em;
+        margin: 0px 0px;
+        padding-left: 10px;
+    }
+    
+}

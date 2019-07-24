@@ -1,0 +1,12 @@
+.SelectedTrack{
+    grid-column-start: 2; 
+    grid-column-end: 3;
+    display:flex;
+}
+
+@media(max-width: 500px){
+    .SelectedTrack{
+        grid-column-start: 1; 
+        grid-column-end: 1;
+    }
+}

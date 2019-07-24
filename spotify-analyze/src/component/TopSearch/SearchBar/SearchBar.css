@@ -1,0 +1,50 @@
+.Title{
+    position:relative;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    transition-duration: .5s;
+}
+
+.Title h1{
+    position:relative;
+    text-shadow: 2px 2px 4px #000000;
+    margin-right: 10px;
+}
+
+.TrackSearchBox{
+    position:relative;
+    transition-property: transform; 
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    transition-duration: .5s;
+}
+.TrackSearch{
+    position:relative;
+    margin:auto;
+}
+
+.SearchLabel{
+    text-shadow: 2px 2px 4px #000000;
+}
+.SearchButton{
+    border-radius: 0px;
+    margin-left: 5px;
+}
+.scrollingTitle{
+    transform: translate(-140px, 5px);
+}
+.scrollingTrackSearchBox{
+    transform: translate(160px, -40px);
+}
+
+@media(max-width: 500px){
+    .Title h1{
+        font-size: 1em;
+    }
+    .scrollingTitle{
+        transform: translate(0px, 0px);
+    }
+    .scrollingTrackSearchBox{
+        transform: translate(00px, 0px);
+    }
+
+}
