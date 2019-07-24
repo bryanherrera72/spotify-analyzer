@@ -1,3 +1,4 @@
+var config = require('../../config/config');
 var axios = require('axios');
 
 function utoa(str) {
@@ -7,7 +8,7 @@ function utoa(str) {
 var axiosAuth = axios.create({
     baseURL: 'https://accounts.spotify.com/api',
     headers: {
-        'Authorization': "Basic " + utoa("7a210937825642efad44b42d57c581be:2db747e89b5b4246ba2c949cd5aefcb8"),
+        'Authorization': "Basic " + utoa(config.KEY + ":"+ config.SECRET),
     },
     params: {
         'grant_type': 'client_credentials',

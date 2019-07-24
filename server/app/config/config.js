@@ -7,7 +7,9 @@ var config = {
     CORS_OPTIONS: { 
         origin: 'http://localhost:3000', 
         optionsSuccessStatus: 200
-    }
+    },
+    KEY: '7a210937825642efad44b42d57c581be',
+    SECRET: '2db747e89b5b4246ba2c949cd5aefcb8',
 }
 
 module.exports = config;
